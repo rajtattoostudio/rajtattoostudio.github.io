@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Raj Tattoo Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #120000, #000000);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+    animation: fadeIn 1.2s ease;
+}
+
+.logo {
+    width: 160px;
+    margin: 25px auto 10px;
+    animation: glow 2s infinite alternate;
+}
+
+h1 {
+    font-size: 26px;
+    margin: 5px 0;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    color: #ff2a2a;
+    font-size: 14px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+}
+
+.btn {
+    background: linear-gradient(145deg, #0c0c0c, #1a0000);
+    border-radius: 18px;
+    padding: 18px 10px;
+    text-decoration: none;
+    color: white;
+    border: 1px solid rgba(255,0,0,0.2);
+    box-shadow: 0 0 15px rgba(255,0,0,0.15);
+    transition: 0.3s;
+    animation: pop 0.6s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn:hover {
+    transform: scale(1.06);
+    box-shadow: 0 0 25px rgba(255,0,0,0.6);
+}
+
+.btn i {
+    font-size: 28px;
+    margin-bottom: 8px;
+    display: block;
+    color: #ff2a2a;
+    animation: floatIcon 2.5s ease-in-out infinite;
+}
+
+/* Different delays so all icons don't move same */
+.btn:nth-child(1) i { animation-delay: 0s; }
+.btn:nth-child(2) i { animation-delay: 0.3s; }
+.btn:nth-child(3) i { animation-delay: 0.6s; }
+.btn:nth-child(4) i { animation-delay: 0.9s; }
+.btn:nth-child(5) i { animation-delay: 1.2s; }
+
+.footer {
+    margin-top: 25px;
+    font-size: 12px;
+    opacity: 0.6;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0; transform: translateY(30px);}
+    to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes pop {
+    from {transform: scale(0.85);}
+    to {transform: scale(1);}
+}
+
+@keyframes glow {
+    from { filter: drop-shadow(0 0 5px red); }
+    to { filter: drop-shadow(0 0 18px red); }
+}
+
+/* Floating animation */
+@keyframes floatIcon {
+    0%   { transform: translateY(0px); }
+    50%  { transform: translateY(-8px); }
+    100% { transform: translateY(0px); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- LOGO -->
+    <img src="logo.png" class="logo">
+
+    <!-- NAME -->
+    <h1>Raj Tattoo Studio & Piercing</h1>
+    <div class="tagline">GET INKED • SURAT</div>
+
+    <!-- BUTTONS -->
+    <div class="buttons">
+
+        <!-- CALL -->
+        <a href="tel:+918320872721" class="btn">
+            <i class="fa-solid fa-phone"></i>
+            Call
+        </a>
+
+        <!-- WHATSAPP -->
+        <a href="https://wa.me/message/G6V4MQNAZ4ISD1" class="btn" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+            WhatsApp
+        </a>
+
+        <!-- INSTAGRAM -->
+        <a href="https://www.instagram.com/surat_raj_tattoo" class="btn" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            Instagram
+        </a>
+
+        <!-- GOOGLE REVIEW -->
+        <a href="https://g.page/r/Cc1Gk_Gg4UUJEBM/review" class="btn" target="_blank">
+            <i class="fa-brands fa-google"></i>
+            Google Review
+        </a>
+
+        <!-- LOCATION -->
+        <a href="https://maps.app.goo.gl/dUiFRLortR3FgcP17" class="btn" target="_blank">
+            <i class="fa-solid fa-location-dot"></i>
+            Location
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 Raj Tattoo Studio | Surat
+    </div>
+
+</div>
+
+</body>
+</html>
